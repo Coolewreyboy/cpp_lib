@@ -26,11 +26,7 @@ struct modint {
         if(n & 1) return a * pow(a, n - 1);
         return pow(a * a, n >> 1);
     }
-    modint &operator-() {
-      x = -x;
-      if(x != 0) x += MOD;
-      return *this;
-    }
+    modint &operator-() { if(x = -x; x != 0) x += MOD; return *this; }
     friend bool operator==(const modint &a, const modint &b) { return a.x == b.x; }
     friend ostream &operator<<(ostream &s, const modint &b) { return s << b.x; }
 };
