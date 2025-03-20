@@ -31,4 +31,4 @@ struct modint {
    friend ostream &operator<<(ostream &s, const modint &b) { return s << b.x; }
    int &operator*() { return x; }
 };
-using mint = modint<998244353>;
+//using mint = modint<998244353>;
