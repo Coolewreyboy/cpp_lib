@@ -21,7 +21,7 @@ void solve(int __case) {
 
 int main() {
    cin.tie(0)->sync_with_stdio(0);
-   if(auto s = "in.txt"; fopen(s, "r") && freopen(s, "r", stdin));
+   if(auto s = "in.txt"; fopen(s, "r") && freopen(s, "r", stdin)){};
    int t = 1;
    //cin >> t;
    //t = 1;
