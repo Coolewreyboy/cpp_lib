@@ -5,7 +5,6 @@
 #define size(v) (int) v.size()
 #define all(v) begin(v), end(v)
 #define ff(T, name, args...) function<T(args)> name = [&](args)->T
-#define jj(v...) v; [](auto&...x){(cin >> ... >> x);}(v);
 #if !LOCAL
    #define endl '\n'
 #endif
@@ -15,7 +14,8 @@ using ll = decltype(1LL);
 const ll INF = 1e18l + 100;
 const int mod = 1e9 + 7, inf = 1e9 + 100;
 
-void solve(int __case) {
+void solve(int __case)
+{
    //...//
 }
 
@@ -25,6 +25,7 @@ int main() {
    int t = 1;
    //cin >> t;
    //t = 1;
-   while(t--) solve(t);
+   for(int T = 1; T < t; T++)
+      solve(T);
    return 0;
 }
