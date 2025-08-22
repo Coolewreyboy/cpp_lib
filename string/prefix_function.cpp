@@ -1,7 +1,7 @@
 std::vector<int> prefix_function(auto begin, auto end)
 {
-    std::vector<int> p(end - begin);
     int n = end - begin;
+    std::vector<int> p(n);
     for(int i = 1; i < n; i++) {
         int k = p[i - 1];
         while(k > 0 && *(begin + k) != *(begin + i))
